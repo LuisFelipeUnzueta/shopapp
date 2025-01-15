@@ -9,6 +9,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  provider: any
+  dio: any
+  intl: ^0.20.1
+  shared_preferences: ^2.3.5
+  cupertino_icons: ^1.0.8
+
 
 dev_dependencies:
   flutter_test:
@@ -17,3 +23,32 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/categories/light/automotivo.png
+    - assets/categories/light/brinquedos.png
+    - assets/categories/light/decor.png
+    - assets/categories/light/eletrodomesticos.png
+    - assets/categories/light/games.png
+    - assets/categories/light/informatica.png
+    - assets/categories/light/moda.png
+    - assets/categories/light/telefonia.png
+    - assets/categories/light/tv.png
+    - assets/categories/dark/automotivo.png
+    - assets/categories/dark/brinquedos.png
+    - assets/categories/dark/decor.png
+    - assets/categories/dark/eletrodomesticos.png
+    - assets/categories/dark/games.png
+    - assets/categories/dark/informatica.png
+    - assets/categories/dark/moda.png
+    - assets/categories/dark/telefonia.png
+    - assets/categories/dark/tv.png
+    - assets/categories/dark-yellow/automotivo.png
+    - assets/categories/dark-yellow/brinquedos.png
+    - assets/categories/dark-yellow/decor.png
+    - assets/categories/dark-yellow/eletrodomesticos.png
+    - assets/categories/dark-yellow/games.png
+    - assets/categories/dark-yellow/informatica.png
+    - assets/categories/dark-yellow/moda.png
+    - assets/categories/dark-yellow/telefonia.png
+    - assets/categories/dark-yellow/tv.png
