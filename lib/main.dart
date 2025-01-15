@@ -9,12 +9,24 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('teste'),
-        ),
-      ),
+    return  MaterialApp(
+      title: 'Shopping cart',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: HomePage(),
     );
+  }
+}
+
+class HomePage extends StatelessWidget {
+
+  const HomePage({ super.key });
+
+   @override
+   Widget build(BuildContext context) {
+       return Scaffold(
+           appBar: AppBar(title: const Text('HOME PAGE'),),
+           body: Container(),
+       );
   }
 }
