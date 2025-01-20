@@ -1,5 +1,5 @@
 class UserModel {
-  late String id;
+  late int id;
   late String name;
   late String email;
   late String image;

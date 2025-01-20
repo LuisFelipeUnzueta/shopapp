@@ -7,7 +7,7 @@ import '../models/product_details.model.dart';
 
 class ProductRepository {
   Future<List<ProductListItemModel>> getAll() async {
-    var url = "${Settings.apiUrl}v1/products";
+    var url = "${Settings.apiUrl}/products";
     Response response = await Dio().get(url);
     if(response.statusCode == 200) {
       return (response.data as List).map((course) => ProductListItemModel.fromJson(course)).toList();
@@ -16,7 +16,7 @@ class ProductRepository {
     }
   }
     Future<List<ProductListItemModel>> getByCategory(String category) async {
-    var url = "${Settings.apiUrl}v1/categories/$category/products";
+    var url = "${Settings.apiUrl}/categories/$category/products";
     Response response = await Dio().get(url);
     return (response.data as List)
         .map((course) => ProductListItemModel.fromJson(course))
@@ -24,7 +24,7 @@ class ProductRepository {
   }
 
   Future<ProductDetailsModel> get(String tag) async {
-    var url = "${Settings.apiUrl}v1/products/$tag";
+    var url = "${Settings.apiUrl}/products/$tag";
     Response response = await Dio().get(url);
     return ProductDetailsModel.fromJson(response.data);
   }

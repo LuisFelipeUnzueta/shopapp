@@ -1,5 +1,5 @@
 class CartItemModel {
-  late String id;
+  late int id;
   late String title;
   late int quantity;
   late double price;

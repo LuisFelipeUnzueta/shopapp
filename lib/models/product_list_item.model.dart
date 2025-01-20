@@ -1,5 +1,5 @@
 class ProductListItemModel {
-  late String id;
+  late int id;
   late String title;
   late String brand;
   late String tag;

@@ -1,5 +1,5 @@
 class CategoryListItemModel {
-  late String id;
+  late int id;
   late String title;
   late String tag;
 

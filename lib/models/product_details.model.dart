@@ -1,7 +1,7 @@
 import 'package:shopapp/models/category.model.dart';
 
 class ProductDetailsModel {
-  late String id;
+  late int id;
   late String title;
   late String tag;
   late double price;
